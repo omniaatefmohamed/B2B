@@ -17,35 +17,99 @@ html {
     font-size: 16px;
     height: 100%
 }
-.checkout-form textarea{
-    height:130px;
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+.sidebar a {
+    padding: 16px 8px 16px 32px;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: rgba(111, 44, 145, 0.19);
+    color: #6f2c91 !important;
+    font-weight: bold
+}
+
+.sidebar a:hover i {
+    color: #6f2c91 !important;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #6f2c91;
+    color: #ffffff;
+    padding: 10px 15px;
+    border: none;
+}
+
+#main {
+    width: calc(100% - 250px);
+}
+
+.top-navbar {
+    padding: 10px 30px;
+}
+
+.checkout-form textarea {
+    height: 130px;
     resize: none;
 }
-.icon-img{
-    width:130px;
-    height:130px;
+
+.icon-img {
+    width: 130px;
+    height: 130px;
 }
-.yellow-bg{
-    background-color:rgba(252, 175, 23, 0.11)!important;
-    
+
+.yellow-bg {
+    background-color: rgba(252, 175, 23, 0.11) !important;
+
 }
-.yellow-border{border-color : #fcaf17 !important;;}
+
+.yellow-border {
+    border-color: #fcaf17 !important;
+    ;
+}
+.fc-bg{
+    background-color: #fcfcfc;
+}
 .h-30,
 .search-form input.form-control {
     height: 30px
 }
-/* .checkout-form label{
-    font-weight:bold;
-} */
-.checkout-form input[type="checkbox"]{
+
+.dashboard-content select{
+    width: 130px;
+}
+.checkout-form input[type="checkbox"] {
     width: 13px;
     height: 13px;
     margin-top: 7px;
 }
-.h-43{height: 43px!important;}
-.fs-36px{
-    font-size:36px;
+
+.h-43 {
+    height: 43px !important;
 }
+
+.fs-36px {
+    font-size: 36px;
+}
+
 .stayInTouch input[type=submit],
 form button,
 form input.form-control {
@@ -59,7 +123,7 @@ body {
 
 .light-gray-color,
 a:hover {
-    color: #929292
+    color: #929292 !important;
 }
 
 .content {
@@ -88,8 +152,20 @@ a {
 .search-form input::placeholder {
     color: #383838 !important
 }
-.supplier-form input:not(input[type="submit"]),.supplier-form select,.agent-form input:not(input[type="submit"]),.agent-form select,.checkout-form input:not(input[type="submit"]),.checkout-form select{
-  color:#7d7d7d;
+
+.supplier-form input:not(input[type="submit"]),
+.supplier-form select,
+.agent-form input:not(input[type="submit"]),
+.agent-form select,
+.checkout-form input:not(input[type="submit"]),
+.checkout-form select {
+    color: #7d7d7d;
+}
+sup{
+    top: -1.5em;
+}
+.progress{
+    height:5px;
 }
 .blue-color {
     color: #008fd5
@@ -100,7 +176,11 @@ a {
     color: #fff
 }
 
-.orange-bg,.orange-bg:active,.orange-bg:hover,.orange-bg:focus,.orange-bg:active:focus {
+.orange-bg,
+.orange-bg:active,
+.orange-bg:hover,
+.orange-bg:focus,
+.orange-bg:active:focus {
     background-color: #fcaf17;
     color: #fff;
     box-shadow: none;
@@ -113,10 +193,14 @@ a {
 .green-bg {
     background-color: #8dc63f
 }
-.fa-check-circle{color: #8dc63f}
+
+.fa-check-circle {
+    color: #8dc63f
+}
 
 .index-banner h1,
-.purple-color,.purple-color:hover {
+.purple-color,
+.purple-color:hover {
     color: #6f2c91
 }
 
@@ -174,9 +258,11 @@ section {
     background-color: #6f2c91;
     border-color: #6f2c91
 }
-.confirm-privacy:checked,.save-payment-data:checked {
+
+.confirm-privacy:checked,
+.save-payment-data:checked {
     background-color: #fcaf17;
-    border-color:#fcaf17
+    border-color: #fcaf17
 }
 
 .accordion-button:focus,
@@ -203,6 +289,7 @@ section {
 .fs-12 {
     font-size: 12px !important
 }
+
 .fs-10 {
     font-size: 10px !important
 }
@@ -210,9 +297,11 @@ section {
 .fs-18 {
     font-size: 18px !important
 }
-.fs-16px{
-    font-size:16px!important;
+
+.fs-16px {
+    font-size: 16px !important;
 }
+
 .events img {
     height: 238px
 }
@@ -245,7 +334,11 @@ h3 {
 .login-banner p {
     font-size: 14px
 }
-.red-bg{background-color:#f04e45}
+
+.red-bg {
+    background-color: #f04e45
+}
+
 .red-color {
     color: #f04e45
 }
@@ -259,11 +352,13 @@ h3 {
     height: 100%
 }
 
-.yellow-color,.yellow-color:hover{
+.yellow-color,
+.yellow-color:hover {
     color: #faad17
 }
+
 .fs-24px {
-    font-size: 24px!important
+    font-size: 24px !important
 }
 
 .fs-16 {
@@ -273,7 +368,12 @@ h3 {
 .single-activity p {
     display: inline-block
 }
-
+.table>:not(:first-child){border:none}
+table tbody tr{
+    border: solid 1px #e3e4e7;
+    vertical-align: middle;
+    margin-bottom:10px ;
+}
 .accordion-button::after,
 .child-list,
 .fa-angle-up,
@@ -516,16 +616,29 @@ input[type=date]::-webkit-calendar-picker-indicator {
 .activities img {
     height: 60px
 }
-.fa-check-circle:before{content:"\f058"}
-.fa-calendar-check-o:before{content:"\f274"}
-.fa-times-circle-o:before{content:"\f05c"}
-.fa-times-circle-o{
+
+.fa-check-circle:before {
+    content: "\f058"
+}
+.fa-clock-o:before{
+    content: "\f017"
+}
+.fa-calendar-check-o:before {
+    content: "\f274"
+}
+
+.fa-times-circle-o:before {
+    content: "\f05c"
+}
+
+.fa-times-circle-o {
     top: -17px;
     right: -10px;
     font-size: 25px;
     cursor: pointer;
 }
-.dropdown-toggle.adult-container:after{
+
+.dropdown-toggle.adult-container:after {
     content: "\f107";
     right: 0;
     position: absolute;
@@ -535,40 +648,41 @@ input[type=date]::-webkit-calendar-picker-indicator {
     font-weight: 700;
     border: 0
 }
+
 select {
     background-image:
-      linear-gradient(45deg, transparent 50%, gray 50%),
-      linear-gradient(135deg, gray 50%, transparent 50%),
-      linear-gradient(to right, #ccc, #ccc);
+        linear-gradient(45deg, transparent 50%, gray 50%),
+        linear-gradient(135deg, gray 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
     background-position:
-      calc(100% - 20px) calc(1em + 2px),
-      calc(100% - 15px) calc(1em + 2px),
-      calc(100% - 2.5em) 0.5em;
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
     background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
     background-repeat: no-repeat;
-  }
-  
-  select:focus {
+}
+
+select:focus {
     background-image:
-      linear-gradient(45deg, #fcaf17 50%, transparent 50%),
-      linear-gradient(135deg, transparent 50%, #fcaf17 50%),
-      linear-gradient(to right, #ccc, #ccc);
+        linear-gradient(45deg, #fcaf17 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, #fcaf17 50%),
+        linear-gradient(to right, #ccc, #ccc);
     background-position:
-      calc(100% - 15px) 1em,
-      calc(100% - 20px) 1em,
-      calc(100% - 2.5em) 0.5em;
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
     background-size:
-      5px 5px,
-      5px 5px,
-      1px 1.5em;
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
     background-repeat: no-repeat;
     border-color: #fcaf17;
     outline: 0;
-  }
-  
+}
+
 @media(min-width:1200px) {
     .activities .col-md-4.col-sm-6 {
         width: 20% !important
@@ -576,66 +690,90 @@ select {
 }
 
 @media(max-width:992px) {
+    .sidebar{
+        display: none;
+        width:100vw;
+    }
+    #main{
+        width:calc(100% + 250px)
+    }
     .accordion-body i {
         width: 21px
     }
+
     .border-end {
         border-right: none !important;
         border-left: none !important
     }
+
     .nav-link.purple-bg,
     .nav-link.purple-bg:focus,
     .nav-link.purple-bg:hover {
         background-color: transparent;
         color: #929292
     }
+
     nav .dropdown-menu.show {
         position: inherit
     }
+
     .search-form {
         width: 100%
     }
+
     .navbar-collapse {
         margin-top: 20px
     }
+
     .events h3 {
         font-size: 18px
     }
+
     .events p {
         font-size: 14px
     }
+
     .events .borderd5,
     .navbar-collapse .dark-border {
         border: none
     }
+
     .stayInTouch {
         text-align: center
     }
+
     .filter-container-top.fltr-top {
         display: block;
         margin-bottom: 0 !important
     }
+
     .filter-group,
     .filter-links.categories-filter {
         display: none;
         margin-top: 0 !important
     }
+
     .order2 {
         order: 2
     }
+
     .top-sorting {
         margin-top: 2rem
     }
+
     .login-banner .left-sec img {
         display: block;
         margin: auto
     }
+
     h1 {
         font-size: 40px
     }
+
     h2 {
         font-size: 32px
     }
+
     h3 {
         font-size: 26px
     }
@@ -645,103 +783,129 @@ select {
     .accordion-button {
         padding: .5rem 2rem
     }
+
     .index-banner img {
         width: 40px;
         height: 40px
     }
+
     .accordion-container p,
     .accordion-container span {
         font-size: 14px
     }
+
     .events .bg-white {
         background-color: transparent !important
     }
+
     .stayInTouch form {
         float: none !important;
         width: 100% !important;
         margin-top: 4%
     }
+
     .events img,
     footer .logo {
         margin-bottom: 20px
     }
+
     .bottom-footer,
     .top-footer {
         display: block !important
     }
+
     .top-footer div:last-of-type a {
         display: block;
         margin-bottom: 10px
     }
+
     .bottom-footer,
     .top-footer div:last-of-type a:last-of-type {
         margin-right: 1rem;
         margin-left: 1rem
     }
+
     footer span {
         text-align: center;
         display: block
     }
+
     .top-footer {
         margin-bottom: 15px
     }
+
     section {
         padding-top: 40px;
         padding-bottom: 40px
     }
+
     .top-sorting .dropdown,
     .top-sorting .dropdown button,
     .top-sorting .dropdown-menu.show {
         width: 100%
     }
+
     .tours-list img {
         height: 300px
     }
+
     .border-start {
         border-left: none !important;
         border-right: none !important
     }
+
     .login-banner .left-sec h1 br {
         display: none
     }
+
     .login-banner .left-sec img {
         width: 350px
     }
+
     h1 {
         font-size: 32px
     }
+
     h2 {
         font-size: 24px
     }
+
     h3 {
         font-size: 20px
     }
 }
 
 @media(max-width:576px) {
-    .fs-36px{
-        font-size:28px;
+    .fs-36px {
+        font-size: 28px;
     }
+
     .top-sorting .dropdown,
     .top-sorting .dropdown button {
         margin-top: .5rem
     }
+
     .login-banner .left-sec img {
         width: 250px
     }
+
     .index-banner img {
         width: 30px;
         height: 30px
     }
+
     .accordion-button {
         padding: .5rem 1rem
     }
+
     h1 {
         font-size: 28px
     }
+
     h2 {
         font-size: 20px
     }
+
     h3 {
         font-size: 16px
     }

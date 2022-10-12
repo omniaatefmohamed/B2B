@@ -6,6 +6,12 @@ var swiper = new Swiper(".mySwiper", {
     breakpoints: { 640: { slidesPerView: 2, spaceBetween: 20 }, 768: { slidesPerView: 4, spaceBetween: 40 }, 1024: { slidesPerView: 5, spaceBetween: 50 } },
 });
 $(document).ready(function () {
+    $(".openbtn").click(function(){
+        $(".sidebar").toggle();
+        if($(".sidebar").is(":hidden")){
+            $("#main").css("width","100%")
+        }
+    });
     $(".adult-number-select").change(function () {
         $(".adult-number-span").html($(this).val());
     });
@@ -30,7 +36,7 @@ $(document).ready(function () {
     $(".filter-container-top.fltr-top").click(function () {
         $(".filter-group").toggle();
     });
-    $(".fa-times-circle-o").click(function(){
+    $(".fa-times-circle-o").click(function () {
         $(this).parent().hide();
     })
     var parent = document.querySelector(".range-slider");
